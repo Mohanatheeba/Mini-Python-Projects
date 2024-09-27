@@ -1,0 +1,30 @@
+import random
+user_input=input("Enter you choice(Rock,Paper,Scissor): ")
+
+bot_input=['rock','paper','scissor']
+inp=random.choice(bot_input)
+print(f"The bot's choice is: {inp}")
+
+if user_input=='rock':
+    if inp=='rock':
+        print("Oops! It's a draw")
+    elif inp=='paper':
+        print("User wins!")
+    else:
+        print("Bot wins!")
+elif user_input=='paper':
+    if inp=='rock': 
+        print("User wins!")
+    elif inp=='paper':
+        print("Oops! It's a draw")
+    else:
+        print("Bot wins!")
+elif user_input=='scissor':
+    if inp=='rock':
+        print("Bot wins!")
+    elif inp=='paper':
+        print("User wins!")
+    else:
+        print("Oops! It's a draw")
+else:
+    print("Invalid input")
